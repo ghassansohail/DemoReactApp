@@ -1,0 +1,42 @@
+language: node_js
+node_js:
+ - 14.17.4
+ cache: npm
+
+ before_install:
+
+  install:
+    - npm ci 
+    
+script:
+  - npm test
+  - npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: 
+
+language: node_js
+node_js:
+ - 14.17.4
+ cache: npm
+
+ 
+
+  install:
+    - npm ci 
+    
+script:
+  - npm test
+  - npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: main
+
+
+
