@@ -1,13 +1,12 @@
 language: node_js
- node_js:
+node_js:
  - "stable"
- cache:
+cache:
  directories:
    - node_modules
- script:
+script:
  - npm test
- - npm run build
-
+ - npm run build || true
 deploy:
  provider: pages
  skip_cleanup: true
@@ -15,60 +14,3 @@ deploy:
  local_dir: build
  on:
    branch: master
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# language: node_js
-# node_js:
-#  - 14.17.4
-#  cache: npm
-
-#  before_install:
-
-#   install:
-#     - npm ci 
-    
-# script:
-#   - npm test
-#   - npm run build
-
-# deploy:
-#   provider: pages
-#   skip-cleanup: true
-#   github-token: 
-
-# language: node_js
-# node_js:
-#  - 14.17.4
-#  cache: npm
-
- 
-
-#   install:
-#     - npm ci 
-    
-# script:
-#   - npm test
-#   - npm run build
-
-# deploy:
-#   provider: pages
-#   skip-cleanup: true
-#   github-token: $GITHUB_TOKEN
-#   on:
-#     branch: master
-
-
-
