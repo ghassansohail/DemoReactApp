@@ -51,7 +51,7 @@ console.log("My Current Mood is"+ emotion);
 
   return (
     <div className="App">
-       <Header name="Ghassan"/>
+       <Header name="Ghassan Sohail"/>
        <Main menu={menuObject}/>
        <h1>My Current Mood is {emotion}</h1>
        <button onClick={()=>{setEmotion("Enthusiasted")}} >

@@ -2,7 +2,7 @@
   "name": "react-essentials",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ghassansohail.github.io/DemoReactApp/",
+  
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -13,7 +13,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"    
   },
-  
+  "homepage": "https://ghassansohail.github.io/DemoReactApp/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
